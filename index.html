@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
   <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Kumbh+Sans">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Overpass">
+  <title>Interactive rating component</title>
   </style>
 </head>
+
 <body>
   <div class="maincontainer">
-    <div class="caard">
-      <div class="img">
-        <img src="bg-pattern-card.svg" alt="">
-        <img src="image-victor.jpg" alt="">
+    <!-- <div class="card"> -->
+    <div class="content slide-in-elliptic-top-fwd " id="thank">
+      <div class="star ">
+        <img src="/icon-star.svg" alt="">
       </div>
-      <div class="content">
-        <h2>Victor Crest    <span>   26<br>London</span></h2>
-      </div>
-        <hr>
-        <div class="text">
-          <p>
-            1M <br>
-  <span>Followers</span>
-          </p>
-          <p>803K <br>
-            <span>
-              Likes</span>
-          </p>
-          <p> 1.4K <br>
-            <span>
-              Photos</span>
-          </p>
+      <h1> How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+
+      <div class="rat">
+        <div class="star" id="rate">
+          <strong>
+            <h1>1</h1>
+          </strong>
         </div>
+        <div class="star">
+          <strong>
+            <h1 id="rating">2</h1>
+          </strong>
+        </div>
+        <div class="star">
+          <strong>
+            <h1>3</h1>
+          </strong>
+        </div>
+        <div class="star">
+          <strong>
+            <h1>4</h1>
+          </strong>
+        </div>
+        <div class="star">
+          <strong>
+            <h1>5</h1>
+          </strong>
+        </div>
+
+      </div>
+      <button class="btn "id onclick="myfun()">SUBMIT</button>
     </div>
+
   </div>
+
+  <script src="rating.js"></script>
+
 </body>
+
 </html>
